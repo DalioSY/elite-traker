@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  padding: 15px 0;
+  background-color: var(--black-blue);
+
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 46px;
+
+    a {
+      text-decoration: none;
+
+      .active {
+        fill: var(--white);
+      }
+
+      svg {
+        width: 32px;
+        height: 32px;
+        fill: var(--light);
+        transition: fill 100ms;
+
+        &:hover {
+          fill: var(--info);
+        }
+      }
+    }
+  }
+
+  .signout {
+    margin-top: auto;
+    width: 32px;
+    height: 32px;
+    fill: var(--error);
+    transform: fill 100ms;
+    cursor: pointer;
+
+    &:hover {
+      fill: var(--error-hover);
+    }
+  }
+}

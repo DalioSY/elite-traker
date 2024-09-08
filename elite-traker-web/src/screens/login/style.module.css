@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black-blue);
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 32px;
+  background-color: var(--dark-blue);
+  width: 380px;
+  border-radius: 8px;
+
+  &:hover {
+    box-shadow: 0px 0px 11px #fff;
+  }
+
+  h1 {
+    color: var(--white);
+    font-size: 24px;
+  }
+
+  p {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    width: 212px;
+  }
+}

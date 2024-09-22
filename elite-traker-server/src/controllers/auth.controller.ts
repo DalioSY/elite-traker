@@ -8,9 +8,6 @@ const {
   JWT_SECRET: secret,
   JWT_EXPIRES_IN: expiresIn,
 } = process.env;
-
-console.log(clientID, clientSecret);
-
 export class AuthController {
   auth = async (req: Request, res: Response) => {
     const redirectUrl = `https://github.com/login/oauth/authorize?client_id=${clientID}`;
